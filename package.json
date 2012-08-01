@@ -1,0 +1,28 @@
+{
+  "name": "jsonb",
+  "version": "0.1.0",
+  "description": "JSON builder templates for Node.js.",
+  "keywords": ["json", "template", "view", "engine", "express"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaredhanson/jsonb.git"
+  },
+  "bugs": {
+    "url": "http://github.com/jaredhanson/jsonb/issues"
+  },
+  "author": { "name": "Jared Hanson", "email": "jaredhanson@gmail.com", "url": "http://www.jaredhanson.net/" },
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT"
+  } ],
+  "main": "./lib",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "vows": "0.6.x"
+  },
+  "scripts": {
+    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
+  },
+  "engines": { "node": ">= 0.4.0" }
+}
