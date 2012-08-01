@@ -1,5 +1,34 @@
 # jsonb
 
+JSON builder templates for Node.js.
+
+## Installation
+
+    $ npm install jsonb
+
+## Usage
+
+jsonb is an [Express](http://expressjs.com/)-compatible template engine.  It
+also exposes `compile` and `render` functions for integration with other
+frameworks.
+
+Define views using standard [JSON](http://www.json.org/) syntax.  `obj` is an
+instance of `Object` and will be rendered using `JSON.stringify`.
+
+    obj['hello'] = name;
+
+Render the view within a route, passing locals to be substituted into the JSON
+output.
+
+    res.render('hello.jsonb', { name: 'Dave' });
+
+## Tests
+
+    $ npm install --dev
+    $ make test
+
+[![Build Status](https://secure.travis-ci.org/jaredhanson/jsonb.png)](http://travis-ci.org/jaredhanson/jsonb)
+
 ## Credits
 
   - [Jared Hanson](http://github.com/jaredhanson)
